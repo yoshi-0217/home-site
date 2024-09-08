@@ -8,20 +8,18 @@
    <p style="color: white; font-size: 10em; text-align: center;">
      下のボタンを押して、今日の<span style=”color: red;”>PROXY</span>運を占いましょう。
    </p>
-   <form>
-     <input type="button" value="Click!" onClick="omikuji()">
-   </form>
+   <input type="button" onClick="omikuji()">Click!</input>
    
    <script type="text/javascript">
-function omikuji() {
-	rand = Math.floor(Math.random()*5);
-	if (rand == 0) setTimeout("location.href='https://pornhub.com'",1000*5);
-	if (rand == 1) msg = "中吉";
-	if (rand == 2) msg = "吉";
-	if (rand == 3) msg = "凶";
-	if (rand == 4) msg = "大凶";
-	alert(msg);
-}
+	   function omikuji() {
+		   rand = Math.floor(Math.random()*5);
+		   if (rand == 0) setTimeout("location.href='https://pornhub.com'",1000*5);
+		   if (rand == 1) msg = "中吉";
+		   if (rand == 2) msg = "吉";
+		   if (rand == 3) msg = "凶";
+		   if (rand == 4) msg = "大凶";
+		   alert(msg);
+	   }
    </script>
 </body>
 </html>
